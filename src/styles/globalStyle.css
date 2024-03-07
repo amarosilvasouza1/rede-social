@@ -1,0 +1,13 @@
+:root {
+    --color-background-config: rgb(41, 36, 36) ;
+}
+
+.imgPerfil {
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.pointer {
+    cursor: pointer;
+}
