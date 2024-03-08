@@ -1,8 +1,10 @@
 .modal_config {
     border: none;
     background-color: var(--color-background-config);
-    width: 90%;
-    height: 80%;
+    width: 85%;
+    height: 89%;
+
+    border-radius: 20px;
 }
 
 .conteiner_config{
@@ -13,7 +15,9 @@
 
 .titleConfig {
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 19px;
+    font-family: "Sanchez", serif;
     cursor: default;
 }
 
