@@ -10,7 +10,7 @@ const createConfig = () => {
     const imgPelfil = document.querySelector("img")
     imgPelfil.src = img
     imgPelfil.classList = "imgPerfil pointer"
-    
+
     const titleConfig = document.createElement("h2")
     titleConfig.innerText = "Configuraçao"
     titleConfig.classList = "titleConfig"
@@ -64,9 +64,7 @@ const createConfig = () => {
 const renderHeaderConfig = (titleConfig, imgPelfil, closeButton) => {
     const divConfig = document.querySelector(".conteiner_config")
 
-    divConfig.appendChild(imgPelfil)
-    divConfig.appendChild(titleConfig)
-    divConfig.appendChild(closeButton)
+    divConfig.append(imgPelfil, titleConfig, closeButton)
 
     closeButtonConfig()
 }
@@ -74,21 +72,14 @@ const renderHeaderConfig = (titleConfig, imgPelfil, closeButton) => {
 const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPreferences, optionFonts, optionSecurit, optionShortly, optionDarkList, optionHelp) => {
     const sectionConfig = document.querySelector(".configConteiner")
 
-    ulListConfig.appendChild(optionColor)
-    ulListConfig.appendChild(optionBio)
-    ulListConfig.appendChild(optionPreferences)
-    ulListConfig.appendChild(optionFonts)
-    ulListConfig.appendChild(optionSecurit)
-    ulListConfig.appendChild(optionShortly)
-    ulListConfig.appendChild(optionDarkList)
-    ulListConfig.appendChild(optionHelp)
-    
+    ulListConfig.append(optionColor, optionColor, optionBio, optionPreferences, optionFonts, optionSecurit, optionShortly, optionDarkList, optionHelp)
+
     sectionConfig.appendChild(ulListConfig)
 }
 
 const closeButtonConfig = () => {
     const buttonCloseConfig = document.querySelector(".closeButton")
-    
+
     buttonCloseConfig.addEventListener("click", () => {
         const modalConfig = document.querySelector(".modal_config")
         modalConfig.close()
