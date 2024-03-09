@@ -119,10 +119,17 @@
     border: none;
     border-radius: 7px;
 
-    background-color: rgb(214, 212, 212);
+    background-color: rgb(233, 232, 232);
     padding-left: 5px;
     padding-top: 5px;
     padding-right: 5px;
+}
+
+.conteiner_help {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
 }
 
 @keyframes optionAnimation {

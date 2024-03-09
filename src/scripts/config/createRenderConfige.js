@@ -107,10 +107,44 @@ const createRenderBioConfig = () => {
     create = true
 }
 
+const createRenderHelpConfig = () => {
+    const helpConteiner = document.querySelector(".Info_user_config ")
+
+    const divHelpInfo = document.createElement("div")
+    divHelpInfo.classList = "conteiner_help close_info"
+
+    const titleHelpinfo = document.createElement("p")
+    titleHelpinfo.innerText = "Ajuda E Contato"
+    titleHelpinfo.classList = "title_Help_info"
+
+    const inputAssuntoHelpConfig = document.createElement("input")
+    inputAssuntoHelpConfig.placeholder = "Digite O Assunto"
+    inputAssuntoHelpConfig.maxLength = 40
+
+    const inputHelpConfig = document.createElement("textarea")
+    inputHelpConfig.placeholder = "Tiket"
+    inputHelpConfig.cols = 30
+    inputHelpConfig.rows = 10
+    inputHelpConfig.maxLength = 420
+    inputHelpConfig.classList = "input_conteiner_Help"
+
+    const emailHelp = document.createElement("p")
+    emailHelp.innerText = "Aleatorio@gmail.com"
+    emailHelp.classList = "email_info_help"
+
+    const nunberHelp = document.createElement("p")
+    nunberHelp.innerText = "+55 (00) 00000000"
+    nunberHelp.classList = "nunber_info_help"
+
+    divHelpInfo.append(titleHelpinfo, inputAssuntoHelpConfig, inputHelpConfig, emailHelp, nunberHelp)
+    helpConteiner.append(divHelpInfo)
+
+    create = true
+}
+
 const analysisClickOpitionCard = () => {
     const bioClickOpition = document.querySelector(".optionBio")
     bioClickOpition.addEventListener("click", () => {
-        console.log(create)
         if (create == false) {
             createRenderBioConfig()
         } else if (create == true) {
@@ -118,6 +152,18 @@ const analysisClickOpitionCard = () => {
             const closeRemove = document.querySelector(".close_info")
             closeDivRemov.removeChild(closeRemove)
             createRenderBioConfig()
+        }
+    })
+
+    const helpClickOpition = document.querySelector(".optionHelp")
+    helpClickOpition.addEventListener("click", () => {
+        if (create == false) {
+            createRenderHelpConfig()
+        } else if (create == true) {
+            const closeDivRemov = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemov.removeChild(closeRemove)
+            createRenderHelpConfig()
         }
     })
 
