@@ -86,6 +86,32 @@
     height: 100%;
 }
 
+.conteiner_bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+
+    height: 60%;
+    width: 100%;
+}
+
+.title_bio_info {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.Info_user_config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_conteiner {
+    width: 80%;
+}
+
 @keyframes optionAnimation {
 
     0% {

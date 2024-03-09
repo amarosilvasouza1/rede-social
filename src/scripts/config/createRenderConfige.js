@@ -1,6 +1,7 @@
 const img = "./src/icons/perfil.png"
 
 let verify = false
+let create = false
 
 const createConfig = () => {
 
@@ -59,6 +60,8 @@ const createConfig = () => {
     renderSectionConfig(ulListConfig, optionColor, optionBio, optionPreferences, optionFonts, optionSecurit, optionShortly, optionDarkList, optionHelp)
 
     verify = true
+
+    analysisClickOpitionCard()
 }
 
 const renderHeaderConfig = (titleConfig, imgPelfil, closeButton) => {
@@ -75,6 +78,46 @@ const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPrefere
     ulListConfig.append(optionColor, optionColor, optionBio, optionPreferences, optionFonts, optionSecurit, optionShortly, optionDarkList, optionHelp)
 
     sectionConfig.appendChild(ulListConfig)
+}
+
+const createRenderBioConfig = () => {
+    const bioConteiner = document.querySelector(".Info_user_config ")
+
+    const divBioInfo = document.createElement("div")
+    divBioInfo.classList = "conteiner_bio close_info"
+
+    const pBioInfo = document.createElement("p")
+    pBioInfo.innerText = "Edite Bio"
+    pBioInfo.classList = "title_bio_info"
+
+    const inputBioConfig = document.createElement("textarea")
+    inputBioConfig.placeholder = "..."
+    inputBioConfig.cols = 30
+    inputBioConfig.rows = 10
+    inputBioConfig.maxLength = 180
+    inputBioConfig.classList = "input_conteiner"
+
+    divBioInfo.append(pBioInfo, inputBioConfig)
+    bioConteiner.append(divBioInfo)
+
+    create = true
+}
+
+const analysisClickOpitionCard = () => {
+    const bioClickOpition = document.querySelector(".optionBio")
+    bioClickOpition.addEventListener("click", () => {
+        console.log(create)
+        if (create == false) {
+            createRenderBioConfig()
+        } else if (create == true) {
+            const closeDivRemov = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemov.removeChild(closeRemove)
+            createRenderBioConfig()
+        }
+    })
+
+    
 }
 
 const closeButtonConfig = () => {
