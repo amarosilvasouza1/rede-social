@@ -1,5 +1,6 @@
 :root {
     --color-background-config: rgb(41, 36, 36) ;
+    --font-roboto-mono: "Roboto Mono", monospace;
 }
 
 .imgPerfil {

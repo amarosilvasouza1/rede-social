@@ -90,14 +90,18 @@ const createRenderBioConfig = () => {
     pBioInfo.innerText = "Edite Bio"
     pBioInfo.classList = "title_bio_info"
 
+    const spanBioInfo = document.createElement("span")
+    spanBioInfo.innerText = "Conte-nos mais sobre você"
+    spanBioInfo.classList = "span_bio"
+
     const inputBioConfig = document.createElement("textarea")
     inputBioConfig.placeholder = "..."
     inputBioConfig.cols = 30
     inputBioConfig.rows = 10
-    inputBioConfig.maxLength = 180
+    inputBioConfig.maxLength = 250
     inputBioConfig.classList = "input_conteiner"
 
-    divBioInfo.append(pBioInfo, inputBioConfig)
+    divBioInfo.append(pBioInfo, spanBioInfo, inputBioConfig)
     bioConteiner.append(divBioInfo)
 
     create = true
@@ -117,7 +121,6 @@ const analysisClickOpitionCard = () => {
         }
     })
 
-    
 }
 
 const closeButtonConfig = () => {

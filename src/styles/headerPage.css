@@ -1,0 +1,27 @@
+.name_header_container {
+    padding: 15px 32px;
+    text-align: left;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+
+.button_header_container {
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.button_header_container:hover {
+    background-color: #459aa0
+}
