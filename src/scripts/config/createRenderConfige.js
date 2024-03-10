@@ -142,6 +142,30 @@ const createRenderHelpConfig = () => {
     create = true
 }
 
+const createRenderPreferencesConfig = () => {
+    const preferencesConteiner = document.querySelector(".Info_user_config ")
+
+    const divPreferencesInfo = document.createElement("div")
+    divPreferencesInfo.classList = "conteiner_preferences close_info"
+
+    const spanFoodpreferences = document.createElement("span")
+    spanFoodpreferences.innerText = "#Comida"
+
+    const spanCookpreferences = document.createElement("span")
+    spanCookpreferences.innerText = "#cozinhar"
+
+    const spanGamespreferences = document.createElement("span")
+    spanGamespreferences.innerText = "#Jogos"
+
+    const spanStrollpreferences = document.createElement("span")
+    spanStrollpreferences.innerText = "#Passeio"
+
+    divPreferencesInfo.append(spanFoodpreferences, spanCookpreferences, spanGamespreferences, spanStrollpreferences)
+    preferencesConteiner.append(divPreferencesInfo)
+
+    create = true
+}
+
 const analysisClickOpitionCard = () => {
     const bioClickOpition = document.querySelector(".optionBio")
     bioClickOpition.addEventListener("click", () => {
@@ -152,6 +176,18 @@ const analysisClickOpitionCard = () => {
             const closeRemove = document.querySelector(".close_info")
             closeDivRemov.removeChild(closeRemove)
             createRenderBioConfig()
+        }
+    })
+
+    const PreferencesClickOpition = document.querySelector(".optionPreferences")
+    PreferencesClickOpition.addEventListener("click", () => {
+        if (create == false) {
+            createRenderPreferencesConfig()
+        } else if (create == true) {
+            const closeDivRemov = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemov.removeChild(closeRemove)
+            createRenderPreferencesConfig()
         }
     })
 
@@ -166,7 +202,6 @@ const analysisClickOpitionCard = () => {
             createRenderHelpConfig()
         }
     })
-
 }
 
 const closeButtonConfig = () => {
