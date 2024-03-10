@@ -1,5 +1,9 @@
 const img = "./src/icons/perfil.png"
 
+const imgMatch = "./src/icons/match.png"
+const imgCloseFriends = "./src/icons/close-frends.png"
+const imgVipChat = "./src/icons/vip-chat.png"
+
 let verify = false
 let create = false
 
@@ -18,7 +22,7 @@ const createConfig = () => {
 
     const closeButton = document.createElement("p")
     closeButton.innerText = "X"
-    closeButton.classList = "closeButton"
+    closeButton.classList = "closeButton pointer"
 
     renderHeaderConfig(titleConfig, imgPelfil, closeButton)
 
@@ -46,7 +50,7 @@ const createConfig = () => {
     optionSecurit.innerText = "Securança E Notificações"
 
     const optionShortly = document.createElement("li")
-    optionShortly.classList = "cardConfig optionShotly"
+    optionShortly.classList = "cardConfig optionShortly"
     optionShortly.innerText = "Em Breve"
 
     const optionDarkList = document.createElement("li")
@@ -166,6 +170,63 @@ const createRenderPreferencesConfig = () => {
     create = true
 }
 
+const createRenderComeSoonConfig = () => {
+    const comeSoonConteiner = document.querySelector(".Info_user_config")
+
+    const createDivComeSoon = document.createElement("div")
+    createDivComeSoon.classList = "come-soon_div"
+
+    const createUlComeSoon = document.createElement("ul")
+    createUlComeSoon.classList = "come-soon_ul"
+
+    const createImgComeSoonMatch = document.createElement("img")
+    createImgComeSoonMatch.classList = "come-soon_img_match"
+    createImgComeSoonMatch.src = imgMatch
+
+    const createPComeSoonMatch = document.createElement("p")
+    createPComeSoonMatch.classList = "come-soon_p_match"
+    createPComeSoonMatch.innertext = "Será adicionado a opção de match entre usuários."
+
+    const createLiComeSoonMatch = document.createElement("li")
+    createLiComeSoonMatch.classList = "come-soon_li_match"
+
+    const createImgComeSoonCloseFriends = document.createElement("img")
+    createImgComeSoonCloseFriends.classList = "come-soon_img_close-friends"
+    createImgComeSoonCloseFriends.src = imgCloseFriends
+
+    const createPComeSoonCloseFriends = document.createElement("p")
+    createPComeSoonCloseFriends.classList = "come-soon_p_close-friends"
+    createPComeSoonCloseFriends.innerText = "Será adicionado a opção de chat privado."
+
+    const createLiComeSoonCloseFriends = document.createElement("li")
+    createLiComeSoonCloseFriends.classList = "come-soon_li_close-friends"
+
+    const createImgComeSoonVipChat = document.createElement("img")
+    createImgComeSoonVipChat.classList = "come-soon_img_vip-chat"
+    createImgComeSoonVipChat.src = imgVipChat
+
+    const createPComeSoonVipChat = document.createElement("p")
+    createPComeSoonVipChat.classList = "come-soon_p_vip-chat"
+    createPComeSoonVipChat.innerText = "Será adicionado a opção de chat para usuários vip's"
+
+    const createLiComeSoonVipChat = document.createElement("li")
+    createLiComeSoonVipChat.classList = "come-soon_li_vip-chat"
+
+    createLiComeSoonMatch.append(createImgComeSoonMatch, createPComeSoonMatch)
+
+    createLiComeSoonCloseFriends.append(createImgComeSoonCloseFriends, createPComeSoonCloseFriends)
+
+    createLiComeSoonVipChat.append(createImgComeSoonVipChat, createPComeSoonVipChat)
+
+    createUlComeSoon.append(createLiComeSoonMatch, createLiComeSoonCloseFriends, createLiComeSoonVipChat)
+
+    createDivComeSoon.append(createUlComeSoon)
+
+    comeSoonConteiner.append(createDivComeSoon)
+
+    create = true
+}
+
 const creatRenderDarkList = () => {
     const drkListConteiner = document.querySelector(".Info_user_config ")
 
@@ -248,6 +309,18 @@ const analysisClickOpitionCard = () => {
             const closeRemove = document.querySelector(".close_info")
             closeDivRemove.removeChild(closeRemove)
             createRenderHelpConfig()
+        }
+    })
+
+    const comeSoonClickOption = document.querySelector(".optionShortly")
+    comeSoonClickOption.addEventListener("click", () => {
+        if (create == false) {
+            createRenderComeSoonConfig()
+        } else if (create == true) {
+            const closeDivRemove = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemove.removeChild(closeRemove)
+            createRenderComeSoonConfig()
         }
     })
 }
