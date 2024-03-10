@@ -213,15 +213,10 @@ const createRenderComeSoonConfig = () => {
     createLiComeSoonVipChat.classList = "come-soon_li_vip-chat"
 
     createLiComeSoonMatch.append(createImgComeSoonMatch, createPComeSoonMatch)
-
     createLiComeSoonCloseFriends.append(createImgComeSoonCloseFriends, createPComeSoonCloseFriends)
-
     createLiComeSoonVipChat.append(createImgComeSoonVipChat, createPComeSoonVipChat)
-
     createUlComeSoon.append(createLiComeSoonMatch, createLiComeSoonCloseFriends, createLiComeSoonVipChat)
-
     createDivComeSoon.append(createUlComeSoon)
-
     comeSoonConteiner.append(createDivComeSoon)
 
     create = true
