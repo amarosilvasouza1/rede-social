@@ -1,3 +1,5 @@
+import { verifyConfig } from "../config/createRenderConfige.js"
+
 const img = "./src/icons/perfil.png"
 const user = "Amaro"
 
@@ -8,7 +10,7 @@ const createHeaderPage = () => {
     imgPerfilDiv.classList = "header_container"
 
     const imgPerfilImg = document.createElement('img')
-    imgPerfilImg.classList = "header_container"
+    imgPerfilImg.classList = "imgPerfil"
     imgPerfilImg.src = img
 
     const txtPerfilName = document.createElement('p')
@@ -19,19 +21,18 @@ const createHeaderPage = () => {
     namePerfilDiv.classList = "name_header_container"
 
     const imgPerfilButton = document.createElement('button')
-    imgPerfilButton.classList = "button_header_container"
+    imgPerfilButton.classList = "button_header_container setinst"
     imgPerfilButton.innerText = "Configuração"
+    imgPerfilButton.type = "button"
 
     renderHeaderPage(saveHeader, imgPerfilDiv, imgPerfilImg, namePerfilDiv, txtPerfilName, imgPerfilButton)
+    verifyConfig()
 }
 
 const renderHeaderPage = (saveHeader, imgPerfilDiv, imgPerfilImg, namePerfilDiv, txtPerfilName, imgPerfilButton) => {
-    namePerfilDiv.append(imgPerfilImg)
-    namePerfilDiv.append(txtPerfilName)
-
-    imgPerfilDiv.append(namePerfilDiv)
-    imgPerfilDiv.append(imgPerfilButton)
-
+   
+    namePerfilDiv.append(imgPerfilImg, txtPerfilName)
+    imgPerfilDiv.append(namePerfilDiv, imgPerfilButton)
     saveHeader.append(imgPerfilDiv)
 }
 createHeaderPage()

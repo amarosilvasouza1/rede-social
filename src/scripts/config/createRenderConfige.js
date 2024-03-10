@@ -43,7 +43,7 @@ const createConfig = () => {
 
     const optionSecurit = document.createElement("li")
     optionSecurit.classList = "cardConfig optionSecurit"
-    optionSecurit.innerText = "Securanças E Notificaçoes"
+    optionSecurit.innerText = "Securança E Notificações"
 
     const optionShortly = document.createElement("li")
     optionShortly.classList = "cardConfig optionShotly"
@@ -261,7 +261,7 @@ const closeButtonConfig = () => {
     })
 }
 
-const verifyConfig = () => {
+export const verifyConfig = () => {
     const butonConfig = document.querySelector(".setinst")
 
     butonConfig.addEventListener("click", () => {
@@ -273,5 +273,3 @@ const verifyConfig = () => {
         }
     })
 }
-
-verifyConfig()
