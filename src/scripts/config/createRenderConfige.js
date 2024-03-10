@@ -166,6 +166,42 @@ const createRenderPreferencesConfig = () => {
     create = true
 }
 
+const creatRenderDarkList = () => {
+    const drkListConteiner = document.querySelector(".Info_user_config ")
+
+    const divDarkListInfo = document.createElement("div")
+    divDarkListInfo.classList = "conteiner_darkList close_info"
+
+    const ulCardDarkListInfo = document.createElement("ul")
+    ulCardDarkListInfo.classList = "ul_card_dark-list"
+
+    const liCardDarkListInfo = document.createElement("li")
+    liCardDarkListInfo.classList = "li_card_dark-list"
+
+    const imgUserCardDarkListInfo = document.createElement("img")
+    imgUserCardDarkListInfo.classList = "img_dark-list imgPerfil"
+    imgUserCardDarkListInfo.src = img
+
+    const pCardDarkListInfo = document.createElement("p")
+    pCardDarkListInfo.classList = "p_name_dark-list"
+    pCardDarkListInfo.innerText = "Amaro"
+
+    const spanCardDarkListInfo = document.createElement("span")
+    spanCardDarkListInfo.classList = "hour_dark-list"
+    spanCardDarkListInfo.innerText = "00:00"
+
+    const removeCardDarkListInfo = document.createElement("button")
+    removeCardDarkListInfo.classList = "remove_dark-list"
+    removeCardDarkListInfo.innerText = "Remover Usuário Da Lista Negra"
+
+    liCardDarkListInfo.append(imgUserCardDarkListInfo, pCardDarkListInfo, spanCardDarkListInfo, removeCardDarkListInfo)
+    ulCardDarkListInfo.append(liCardDarkListInfo)
+    divDarkListInfo.append(ulCardDarkListInfo)
+    drkListConteiner.append(divDarkListInfo)
+
+    create = true
+}
+
 const analysisClickOpitionCard = () => {
     const bioClickOpition = document.querySelector(".optionBio")
     bioClickOpition.addEventListener("click", () => {
@@ -188,6 +224,18 @@ const analysisClickOpitionCard = () => {
             const closeRemove = document.querySelector(".close_info")
             closeDivRemov.removeChild(closeRemove)
             createRenderPreferencesConfig()
+        }
+    })
+
+    const darkListClickOpition = document.querySelector(".optionDarkList")
+    darkListClickOpition.addEventListener("click", () => {
+        if (create == false) {
+            creatRenderDarkList()
+        } else if (create == true) {
+            const closeDivRemov = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemov.removeChild(closeRemove)
+            creatRenderDarkList()
         }
     })
 
