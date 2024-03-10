@@ -35,7 +35,7 @@ const createConfig = () => {
 
     const optionPreferences = document.createElement("li")
     optionPreferences.classList = "cardConfig optionPreferences"
-    optionPreferences.innerText = "Preferençias"
+    optionPreferences.innerText = "Preferências"
 
     const optionFonts = document.createElement("li")
     optionFonts.classList = "cardConfig optionFonts"
@@ -87,7 +87,7 @@ const createRenderBioConfig = () => {
     divBioInfo.classList = "conteiner_bio close_info"
 
     const pBioInfo = document.createElement("p")
-    pBioInfo.innerText = "Edite Bio"
+    pBioInfo.innerText = "Biografia"
     pBioInfo.classList = "title_bio_info"
 
     const spanBioInfo = document.createElement("span")
@@ -122,7 +122,7 @@ const createRenderHelpConfig = () => {
     inputAssuntoHelpConfig.maxLength = 40
 
     const inputHelpConfig = document.createElement("textarea")
-    inputHelpConfig.placeholder = "Tiket"
+    inputHelpConfig.placeholder = "Ticket"
     inputHelpConfig.cols = 30
     inputHelpConfig.rows = 10
     inputHelpConfig.maxLength = 420
@@ -134,7 +134,7 @@ const createRenderHelpConfig = () => {
 
     const nunberHelp = document.createElement("p")
     nunberHelp.innerText = "+55 (00) 00000000"
-    nunberHelp.classList = "nunber_info_help"
+    nunberHelp.classList = "number_info_help"
 
     divHelpInfo.append(titleHelpinfo, inputAssuntoHelpConfig, inputHelpConfig, emailHelp, nunberHelp)
     helpConteiner.append(divHelpInfo)
@@ -244,9 +244,9 @@ const analysisClickOpitionCard = () => {
         if (create == false) {
             createRenderHelpConfig()
         } else if (create == true) {
-            const closeDivRemov = document.querySelector(".Info_user_config")
+            const closeDivRemove = document.querySelector(".Info_user_config")
             const closeRemove = document.querySelector(".close_info")
-            closeDivRemov.removeChild(closeRemove)
+            closeDivRemove.removeChild(closeRemove)
             createRenderHelpConfig()
         }
     })
