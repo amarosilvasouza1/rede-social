@@ -1,1 +1,5 @@
-// const preferencesUser
+const preferencesUser = [
+    {
+        hobbie: "#ler livros"
+    },
+]

@@ -174,7 +174,7 @@ const createRenderComeSoonConfig = () => {
     const comeSoonConteiner = document.querySelector(".Info_user_config")
 
     const createDivComeSoon = document.createElement("div")
-    createDivComeSoon.classList = "come-soon_div"
+    createDivComeSoon.classList = "come-soon_div close_info"
 
     const createUlComeSoon = document.createElement("ul")
     createUlComeSoon.classList = "come-soon_ul"
