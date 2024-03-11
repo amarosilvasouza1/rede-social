@@ -1,3 +1,5 @@
+import { colorConfigArray } from "./data.color.config.js"
+
 const img = "./src/icons/perfil.png"
 
 const imgMatch = "./src/icons/match.png"
@@ -82,6 +84,34 @@ const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPrefere
     ulListConfig.append(optionColor, optionColor, optionBio, optionPreferences, optionFonts, optionSecurit, optionShortly, optionDarkList, optionHelp)
 
     sectionConfig.appendChild(ulListConfig)
+}
+
+const createRenderColorConfig = () => {
+    const colorConteiner = document.querySelector(".Info_user_config ")
+
+    const divColorInfo = document.createElement("div")
+    divColorInfo.classList = "conteiner_color close_info"
+    
+    const pColorinfo = document.createElement("p")
+    pColorinfo.innerText = "Seu Nome"
+
+    const ulColorInfo = document.createElement("ul")
+    ulColorInfo.classList = "conteiner_card_color"
+
+
+    for (let i = 0; i < colorConfigArray.length; i++) {
+        const color = colorConfigArray[i];
+
+        const liColorInfo = document.createElement("li")
+        liColorInfo.classList = `card_color_info ${color.color} pointer`
+
+        ulColorInfo.append(liColorInfo)
+    }
+
+    divColorInfo.append(pColorinfo, ulColorInfo)
+    colorConteiner.append(divColorInfo)
+
+    create = true
 }
 
 const createRenderBioConfig = () => {
@@ -316,6 +346,18 @@ const analysisClickOpitionCard = () => {
             const closeRemove = document.querySelector(".close_info")
             closeDivRemove.removeChild(closeRemove)
             createRenderComeSoonConfig()
+        }
+    })
+
+    const colorClickOption = document.querySelector(".optionColor")
+    colorClickOption.addEventListener("click", () => {
+        if (create == false) {
+            createRenderColorConfig()
+        } else if (create == true) {
+            const closeDivRemove = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemove.removeChild(closeRemove)
+            createRenderColorConfig()
         }
     })
 }

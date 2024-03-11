@@ -132,6 +132,11 @@
     width: 90%;
 }
 
+.conteiner_card_color {
+    display: flex;
+    gap: 1rem;
+}
+
 @keyframes optionAnimation {
 
     0% {

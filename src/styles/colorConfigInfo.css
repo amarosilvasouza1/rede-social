@@ -1,0 +1,49 @@
+.card_color_info {
+    padding: 1.2rem;
+    border: white 1px solid;
+    border-radius: 7px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.amarelo {
+    background-color: yellow;
+}
+
+.roxo {
+    background-color: purple;
+}
+
+.violeta {
+    background-color: violet;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.indigo {
+    background-color: indigo;
+}
+
+.roza {
+    background-color: pink;
+}
+
+.branco {
+    background-color: white;
+}
+
+.cinza{
+    background-color: gray;
+}
