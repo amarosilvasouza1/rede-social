@@ -1,3 +1,4 @@
+import { entreSaveBio } from "./bioConfig.js"
 import { colorConfigArray } from "./data.color.config.js"
 
 const img = "./src/icons/perfil.png"
@@ -95,8 +96,14 @@ const createRenderColorConfig = () => {
     const pColorinfo = document.createElement("p")
     pColorinfo.innerText = "Seu Nome"
 
+    const p1Colorinfo = document.createElement("p")
+    pColorinfo.innerText = "connfiguraçao"
+
     const ulColorInfo = document.createElement("ul")
     ulColorInfo.classList = "conteiner_card_color"
+
+    const ul1ColorInfo = document.createElement("ul")
+    ul1ColorInfo.classList = "conteiner_card_color"
 
 
     for (let i = 0; i < colorConfigArray.length; i++) {
@@ -108,7 +115,16 @@ const createRenderColorConfig = () => {
         ulColorInfo.append(liColorInfo)
     }
 
-    divColorInfo.append(pColorinfo, ulColorInfo)
+    for (let i = 0; i < colorConfigArray.length; i++) {
+        const color = colorConfigArray[i];
+
+        const li1ColorInfo = document.createElement("li")
+        li1ColorInfo.classList = `card_color_info ${color.color} pointer`
+
+        ul1ColorInfo.append(li1ColorInfo)
+    }
+
+    divColorInfo.append(pColorinfo, ulColorInfo, p1Colorinfo, ul1ColorInfo)
     colorConteiner.append(divColorInfo)
 
     create = true
@@ -134,9 +150,17 @@ const createRenderBioConfig = () => {
     inputBioConfig.rows = 10
     inputBioConfig.maxLength = 250
     inputBioConfig.classList = "input_conteiner"
+    const bioMensagem = localStorage.getItem("@bio_user")
+    inputBioConfig.value = JSON.parse(bioMensagem)
 
-    divBioInfo.append(pBioInfo, spanBioInfo, inputBioConfig)
+    const buttonConfigBio = document.createElement("button")
+    buttonConfigBio.classList = "enter_save_bio pointer"
+    buttonConfigBio.innerText = "Salvar"
+
+    divBioInfo.append(pBioInfo, spanBioInfo, inputBioConfig , buttonConfigBio)
     bioConteiner.append(divBioInfo)
+
+    entreSaveBio()
 
     create = true
 }

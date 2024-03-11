@@ -125,6 +125,21 @@
     padding-right: 5px;
 }
 
+.enter_save_bio {
+    border: none;
+    border-radius: 4px;
+    width: 80px;
+    height: 24px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(188, 183, 194);
+    font-weight: 600;
+}
+
+.enter_save_bio:hover {
+    background-color: greenyellow;
+}
+
 .conteiner_help {
     display: flex;
     flex-direction: column;
