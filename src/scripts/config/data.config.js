@@ -127,11 +127,11 @@ const preferencesUser = [
     },
 
     {
-        hobbie: "#"
+        hobbie: "#Amizade"
     },
 
     {
-        hobbie: "#"
+        hobbie: "#Comversa"
     },
     {
         hobbie: "#"
