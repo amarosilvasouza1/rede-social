@@ -12,9 +12,6 @@ let create = false
 
 const NameUser = "Amaro_Silva"
 
-const bioMensagem = localStorage.getItem("@bio_user")
-const Bio = JSON.parse(bioMensagem)
-
 const createConfig = () => {
 
     const modalConfig = document.querySelector(".modal_config")
@@ -104,30 +101,33 @@ const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPrefere
     })
 
     const createRendInfouser = () => {
+        const bioMensagem = localStorage.getItem("@bio_user")
+        const Bio = JSON.parse(bioMensagem)
+        
         const InfoUserConteiner = document.querySelector(".Info_user_config")
-    
+
         const createDivInfoUser = document.createElement("div")
         createDivInfoUser.classList = "info_div_user close_info"
 
         const createDivPInfoUser = document.createElement("div")
         createDivPInfoUser.classList = "div_p_info_user"
-    
+
         const createImgInfoUser = document.createElement("img")
         createImgInfoUser.src = img
         createImgInfoUser.classList = "imgPerfil perfil_info_user"
-    
+
         const createNameInfoUser = document.createElement("p")
         createNameInfoUser.innerText = NameUser
         createNameInfoUser.classList = "name_user_info"
-    
+
         const createBioInfoUser = document.createElement("p")
         createBioInfoUser.innerText = Bio
         createBioInfoUser.classList = "Bio_info_user"
-    
+
         createDivPInfoUser.append(createBioInfoUser)
         createDivInfoUser.append(createImgInfoUser, createNameInfoUser, createDivPInfoUser)
         InfoUserConteiner.append(createDivInfoUser)
-    
+
         create = true
     }
     createRendInfouser()
@@ -138,7 +138,7 @@ const createRenderColorConfig = () => {
 
     const divColorInfo = document.createElement("div")
     divColorInfo.classList = "conteiner_color close_info"
-    
+
     const pColorinfo = document.createElement("p")
     pColorinfo.innerText = "Seu Nome"
 
@@ -203,7 +203,7 @@ const createRenderBioConfig = () => {
     buttonConfigBio.classList = "enter_save_bio pointer"
     buttonConfigBio.innerText = "Salvar"
 
-    divBioInfo.append(pBioInfo, spanBioInfo, inputBioConfig , buttonConfigBio)
+    divBioInfo.append(pBioInfo, spanBioInfo, inputBioConfig, buttonConfigBio)
     bioConteiner.append(divBioInfo)
 
     entreSaveBio()
@@ -318,7 +318,7 @@ const createRenderComeSoonConfig = () => {
     createUlComeSoon.append(createLiComeSoonMatch, createLiComeSoonCloseFriends, createLiComeSoonVipChat)
     createDivComeSoon.append(createUlComeSoon)
     comeSoonConteiner.append(createDivComeSoon)
-    
+
 
     create = true
 }
