@@ -17,7 +17,7 @@ const createConfig = () => {
     const modalConfig = document.querySelector(".modal_config")
     modalConfig.showModal()
 
-    const imgPelfil = document.querySelector("img")
+    const imgPelfil = document.createElement("img")
     imgPelfil.src = img
     imgPelfil.classList = "imgPerfil pointer img_perfil_config_info"
 
