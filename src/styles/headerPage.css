@@ -40,6 +40,10 @@
     background-color: #459aa0
 }
 
+.section_button_arrow {
+    width: 100%;
+}
+
 .section_conteiner_select {
     height: 2rem;
     border-bottom: 1px solid white;
@@ -69,10 +73,6 @@
     color: rgb(38, 122, 170);
 }
 
-.section_button_arrow {
-    margin-left: 30px;
-}
-
 .arrow_button_div {
     display: flex;
     align-items: center;
@@ -86,4 +86,12 @@
 
 .arrow_button_header {
     width: 20px;
+}
+
+.div_select_opition {
+    width: 100%;
+}
+
+.section_conteiner_select {
+    width: 100%;
 }
