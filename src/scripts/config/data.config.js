@@ -1,186 +1,185 @@
-const preferencesUser = [
+export const preferencesUser = [
     {
-        hobbie: "Ler Livros",
+        preferences: "Ler Livros",
+        color: "verde"
     },
     {
-        hobbie: "#Jogos Eletrônicos"
+        preferences: "#Jogos Eletrônicos",
+        color: "branco"
     },
     {
-        hobbie: "#Musculação"
+        preferences: "#Musculação",
+        color: "azul"
     },
     {
-        hobbie: "#Luta"
+        preferences: "#Luta", 
+        color: "roxo"
     },
     {
-        hobbie: "#Comidas"
+        preferences: "#Comidas",
+        color: "verde"
     },
     {
-        hobbie: "#Cozinhar"
+        preferences: "#Cozinhar",
+        color: "amarelo"
     },
     {
-        hobbie: "#Natação"
+        preferences: "#Natação",
+        color: "azul"
     },
     {
-        hobbie: "#Dev's"
+        preferences: "#Programação",
+        color: "roza"
     },
     {
-        hobbie: "#Carros"
+        preferences: "#Carros",
+        color: "roxo"
     },
     {
-        hobbie: "#Turismo"
+        preferences: "#Turismo",
+        color: "roxo"
     },
     {
-        hobbie: "#GearHead"
+        preferences: "#GearHead",
+        color: "branco"
     },
     {
-        hobbie: "#Religião"
+        preferences: "#Religião",
+        color: "roza"
     },
     {
-        hobbie: "#Meditação"
+        preferences: "#Meditação",
+        color: "amarelo"
     },
     {
-        hobbie: "#Financias"
+        preferences: "#Financias",
+        color: "roxo"
     },
     {
-        hobbie: "#Corrida"
+        preferences: "#Corrida",
+        color: "azul"
+
     },
     {
-        hobbie: "#Esportes"
+        preferences: "#Esportes",
+        color: ""
     },
     {
-        hobbie: "#Xadrez"
+        preferences: "#Xadrez",
+        color: "cinza"
     },
     {
-        hobbie: "#Jogos Estratégia"
+        preferences: "#Jogos Estratégia",
+        color: "branco"
     },
     {
-        hobbie: "#Dormir"
+        preferences: "#Dormir",
+        color: "cinza"
     },
     {
-        hobbie: "#Poesia"
+        preferences: "#Poesia",
+        color: "amarelo"
     },
     {
-        hobbie: "#Filmes"
+        preferences: "#Filmes",
+        color: "vermelho"
     },
     {
-        hobbie: "#Artes"
+        preferences: "#Artes",
+        color: "branco"
     },
     {
-        hobbie: "#Fotografia"
+        preferences: "#Fotografia",
+        color: "cinza"
     },
     {
-        hobbie: "#Yoga"
+        preferences: "#Yoga",
+        color: "verde"
     },
     {
-        hobbie: "#Danças"
+        preferences: "#Danças",
+        color: "vermelho"
     },
     {
-        hobbie: "#Futebol"
+        preferences: "#Futebol",
+        color: "verde"
     },
     {
-        hobbie: "#Jardinagem"
+        preferences: "#Jardinagem",
+        color: "verde"
     },
     {
-        hobbie: "#Escalar"
+        preferences: "#Escalar",
+        color: "azul"
     },
     {
-        hobbie: "#Mugir"
+        preferences: "#Ciclismo",
+        color: "amarelo"
     },
     {
-        hobbie: "#Ciclismo"
+        preferences: "#Literatura",
+        color: "azul"
     },
     {
-        hobbie: "#Literatura"
+        preferences: "#Matematica",
+        color: "violeta"
     },
     {
-        hobbie: "#Matematica"
+        preferences: "#Artesanato",
+        color: "azul"
     },
     {
-        hobbie: "#Artesanato"
+        preferences: "#Ciencias",
+        color: "verde"
     },
     {
-        hobbie: "#Ciencias"
+        preferences: "#Linguagens",
+        color: "vermelho"
     },
     {
-        hobbie: "#Linguagens"
+        preferences: "#Faculdade",
+        color: "indigo"
     },
     {
-        hobbie: "#Faculdade"
+        preferences: "#Instrumentos",
+        color: "indigo"
     },
     {
-        hobbie: "#Instrumentos"
+        preferences: "#Músicas",
+        color: "roxo"
     },
     {
-        hobbie: "#Músicas"
+        preferences: "#Política",
+        color: "vermelho"
     },
     {
-        hobbie: "#Faculdade"
+        preferences: "#Tiro ao Alvo",
+        color: "laranja"
     },
     {
-        hobbie: "#Trocar tiro com a policia"
-    },
-    {
-        hobbie: "#Tiro ao Alvo"
-    },
-    {
-        hobbie: "#Teatro"
+        preferences: "#Teatro",
+        color: "violeta"
     },
 
     {
-        hobbie: "#Amizade"
+        preferences: "#Amizade",
+        color: "roxo"
     },
 
     {
-        hobbie: "#Comversa"
+        preferences: "#Conversa",
+        color: "amarelo"
     },
     {
-        hobbie: "#"
+        preferences: "#Parkour",
+        color: "preto"
     },
     {
-        hobbie: "#"
+        preferences: "#Estudos",
+        color: "azul"
     },
-
-
-
-        { hobbie: "Jogar basquete" },
-        { hobbie: "Fazer acampamentos" },
-        { hobbie: "Aprender marcenaria" },
-        { hobbie: "Participar de corridas" },
-        { hobbie: "Praticar tiro ao alvo" },
-        { hobbie: "Escrever roteiros" },
-        { hobbie: "Fazer tricô" },
-        { hobbie: "Observar pássaros" },
-        { hobbie: "Aprender a pilotar drones" },
-        { hobbie: "Fazer esculturas em madeira" },
-        { hobbie: "Praticar surf" },
-        { hobbie: "Jogar vôlei de praia" },
-        { hobbie: "Fazer artes marciais" },
-        { hobbie: "Aprender a costurar" },
-        { hobbie: "Fazer cerâmica" },
-        { hobbie: "Praticar equitação" },
-        { hobbie: "Participar de competições de dança" },
-        { hobbie: "Fazer rapel" },
-        { hobbie: "Escrever artigos" },
-        { hobbie: "Fazer jardinagem vertical" },
-        { hobbie: "Aprender a fazer malabarismos" },
-        { hobbie: "Jogar golfe" },
-        { hobbie: "Fazer tricô" },
-        { hobbie: "Fazer arranjos florais" },
-        { hobbie: "Praticar parkour" },
-        { hobbie: "Fazer origami" },
-        { hobbie: "Fazer crochê" },
-        { hobbie: "Montar quebra-cabeças 3D" },
-        { hobbie: "Jogar damas" },
-        { hobbie: "Fazer modelagem em argila" },
-        { hobbie: "Fazer pintura em aquarela" },
-        { hobbie: "Fazer esculturas em metal" },
-        { hobbie: "Aprender a fazer sushi" },
-        { hobbie: "Fazer grafite" },
-        { hobbie: "Fazer cerâmica" },
-        { hobbie: "Participar de competições de natação" },
-        { hobbie: "Fazer cartões artesanais" },
-        { hobbie: "Fazer patchwork" },
-        { hobbie: "Fazer tricô" },
-   
-
+    {
+        preferences: "#Campo airsoft",
+        color: "laranja"
+    },
 ]

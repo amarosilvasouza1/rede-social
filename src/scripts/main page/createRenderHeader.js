@@ -39,7 +39,9 @@ const renderButtonClickArrow = () => {
                 buttonArrow.classList.remove("close")
                 buttonArrow.classList.add("open")
                 clickArrow()
+                return
             })
+            return
         })
     }
     clickArrow()

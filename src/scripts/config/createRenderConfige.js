@@ -1,5 +1,6 @@
 import { entreSaveBio } from "./bioConfig.js"
 import { colorConfigArray } from "./data.color.config.js"
+import { createRenderPreferencesConfig } from "./renderPreferncis.js"
 
 const img = "./src/icons/perfil.png"
 
@@ -8,7 +9,7 @@ const imgCloseFriends = "./src/icons/close-frends.png"
 const imgVipChat = "./src/icons/vip-chat.png"
 
 let verify = false
-let create = false
+export let create = false
 
 const NameUser = "Amaro_Silva"
 
@@ -246,30 +247,6 @@ const createRenderHelpConfig = () => {
     create = true
 }
 
-const createRenderPreferencesConfig = () => {
-    const preferencesConteiner = document.querySelector(".Info_user_config ")
-
-    const divPreferencesInfo = document.createElement("div")
-    divPreferencesInfo.classList = "conteiner_preferences close_info"
-
-    const spanFoodpreferences = document.createElement("span")
-    spanFoodpreferences.innerText = "#Comida"
-
-    const spanCookpreferences = document.createElement("span")
-    spanCookpreferences.innerText = "#cozinhar"
-
-    const spanGamespreferences = document.createElement("span")
-    spanGamespreferences.innerText = "#Jogos"
-
-    const spanStrollpreferences = document.createElement("span")
-    spanStrollpreferences.innerText = "#Passeio"
-
-    divPreferencesInfo.append(spanFoodpreferences, spanCookpreferences, spanGamespreferences, spanStrollpreferences)
-    preferencesConteiner.append(divPreferencesInfo)
-
-    create = true
-}
-
 const createRenderComeSoonConfig = () => {
     const comeSoonConteiner = document.querySelector(".Info_user_config")
 
@@ -335,6 +312,9 @@ const creatRenderDarkList = () => {
     const liCardDarkListInfo = document.createElement("li")
     liCardDarkListInfo.classList = "li_card_dark-list"
 
+    const divCardImgName = document.createElement("div")
+    divCardImgName.classList = "div_card_img_name"
+
     const imgUserCardDarkListInfo = document.createElement("img")
     imgUserCardDarkListInfo.classList = "img_dark-list imgPerfil"
     imgUserCardDarkListInfo.src = img
@@ -343,15 +323,12 @@ const creatRenderDarkList = () => {
     pCardDarkListInfo.classList = "p_name_dark-list"
     pCardDarkListInfo.innerText = "Amaro"
 
-    const spanCardDarkListInfo = document.createElement("span")
-    spanCardDarkListInfo.classList = "hour_dark-list"
-    spanCardDarkListInfo.innerText = "00:00"
-
     const removeCardDarkListInfo = document.createElement("button")
     removeCardDarkListInfo.classList = "remove_dark-list"
-    removeCardDarkListInfo.innerText = "Remover Usuário Da Lista Negra"
+    removeCardDarkListInfo.innerText = "Remover"
 
-    liCardDarkListInfo.append(imgUserCardDarkListInfo, pCardDarkListInfo, spanCardDarkListInfo, removeCardDarkListInfo)
+    divCardImgName.append(imgUserCardDarkListInfo, pCardDarkListInfo)
+    liCardDarkListInfo.append(divCardImgName, removeCardDarkListInfo)
     ulCardDarkListInfo.append(liCardDarkListInfo)
     divDarkListInfo.append(ulCardDarkListInfo)
     drkListConteiner.append(divDarkListInfo)
@@ -454,3 +431,4 @@ export const verifyConfig = () => {
         }
     })
 }
+
