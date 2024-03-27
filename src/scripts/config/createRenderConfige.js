@@ -1,5 +1,6 @@
 import { entreSaveBio } from "./bioConfig.js"
 import { colorConfigArray } from "./data.color.config.js"
+import { holyChatsCreate } from "./fonts&chats.js"
 import { createRenderPreferencesConfig } from "./renderPreferncis.js"
 
 const img = "./src/icons/perfil.png"
@@ -408,6 +409,18 @@ const analysisClickOpitionCard = () => {
             createRenderColorConfig()
         }
     })
+
+    const fontsChatsClickOption = document.querySelector(".optionFonts")
+    fontsChatsClickOption.addEventListener("click", () => {
+        if (create == false) {
+            holyChatsCreate()
+        } else if (create == true) {
+            const closeDivRemove = document.querySelector(".Info_user_config")
+            const closeRemove = document.querySelector(".close_info")
+            closeDivRemove.removeChild(closeRemove)
+            holyChatsCreate()
+        }
+    })
 }
 
 const closeButtonConfig = () => {
@@ -431,4 +444,3 @@ export const verifyConfig = () => {
         }
     })
 }
-

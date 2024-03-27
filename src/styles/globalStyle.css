@@ -13,7 +13,70 @@
     cursor: pointer;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: wheat;
+}
+
 body {
     background-color: #343a40;
 }
 
+.ul_holy-chats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.chat-holy {
+    min-width: 5rem;
+    max-width: 70%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-weight: 700;
+}
+
+.chat-holy p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.holy-chat_green {
+    background-color: #399E5A;
+    border: 2px solid #63E2C6;
+    color: #1f4123;
+}
+
+.holy-chat_pink {
+    background-color: #ff8fab;
+    border:2px solid #ffc2d1;
+    color: #b44964;
+}
+
+.holy-chat_blue {
+    background-color: #1976d2;
+    border: 2px solid #64b5f6;
+    color: #0c3e8a;
+}
+
+.holy-chat_purple {
+    background-color: #6f46a6;
+    border: 2px solid #9a99f2;
+    color: #380d58;
+}
+
+.holy-chat_red {
+    background-color: #d02224;
+    border: 2px solid #e66063;
+    color: #881517;
+}
+
+.holy-chat_defaul {
+    border: 2px solid white;
+}
