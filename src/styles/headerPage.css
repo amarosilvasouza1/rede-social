@@ -23,14 +23,14 @@
 }
 
 .button_header_container {
-    background-color: navy;
+    background-color: rgb(104, 169, 222);
     border: none;
     color: white;
-    padding: 7px 15px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 3px 4px;
     cursor: pointer;
     border-radius: 12px;
     transition-duration: 0.4s;
@@ -61,16 +61,16 @@
 
 .card_select {
     padding: 0px 7px;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
 
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .card_select:hover {
-    color: rgb(38, 122, 170);
+    color: rgb(42, 186, 107);
+
+    border-bottom: 3px solid rgb(42, 186, 107);
 }
 
 .arrow_button_div {
