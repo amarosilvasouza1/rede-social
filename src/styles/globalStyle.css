@@ -32,13 +32,14 @@ body {
 }
 
 .chat-holy {
-    min-width: 5rem;
+    min-width: 3rem;
     max-width: 70%;
     height: 2rem;
     display: flex;
     align-items: center;
     border-top-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
     font-weight: 700;
 }
 
@@ -79,4 +80,10 @@ body {
 
 .holy-chat_defaul {
     border: 2px solid white;
+}
+
+.holy-chat_blue-glod {
+    background-color: #1976d2;
+    border: 2px solid rgb(223, 190, 6);
+    color: rgb(228, 208, 97);
 }

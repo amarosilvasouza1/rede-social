@@ -39,7 +39,7 @@ const renderButtonClickArrow = () => {
             ulContainerSelect.classList = "ul_container_select"
             
             const liCardSelectPrivate = document.createElement("li")
-            liCardSelectPrivate.classList = "card_select_Privete card_select pointer"
+            liCardSelectPrivate.classList = "card_select_private card_select pointer"
             liCardSelectPrivate.innerText = "Chat Privado"
             
             const liCardSelectParty = document.createElement("li")

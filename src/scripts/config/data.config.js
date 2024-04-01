@@ -1,185 +1,185 @@
 export const preferencesUser = [
     {
-        preferences: "Ler Livros",
-        color: "verde"
+        preferences: "#Ler Livros",
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Jogos Eletrônicos",
-        color: "branco"
+        color: "branco", p: "branco_p"
     },
     {
         preferences: "#Musculação",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Luta", 
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
     {
         preferences: "#Comidas",
-        color: "verde"
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Cozinhar",
-        color: "amarelo"
+        color: "amarelo", p: "amarelo_p"
     },
     {
         preferences: "#Natação",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Programação",
-        color: "roza"
+        color: "roza", p: "roza_p"
     },
     {
         preferences: "#Carros",
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
     {
         preferences: "#Turismo",
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
     {
         preferences: "#GearHead",
-        color: "branco"
+        color: "branco", p: "branco_p"
     },
     {
         preferences: "#Religião",
-        color: "roza"
+        color: "roza", p: "roza_p"
     },
     {
         preferences: "#Meditação",
-        color: "amarelo"
+        color: "amarelo", p: "amarelo_p"
     },
     {
         preferences: "#Financias",
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
     {
         preferences: "#Corrida",
-        color: "azul"
+        color: "azul", p: "azul_p"
 
     },
     {
         preferences: "#Esportes",
-        color: ""
+        color: "cinza", p: "cinza_p"
     },
     {
         preferences: "#Xadrez",
-        color: "cinza"
+        color: "cinza", p: "cinza_p"
     },
     {
         preferences: "#Jogos Estratégia",
-        color: "branco"
+        color: "branco", p: "branco_p"
     },
     {
         preferences: "#Dormir",
-        color: "cinza"
+        color: "cinza", p: "cinza_p"
     },
     {
         preferences: "#Poesia",
-        color: "amarelo"
+        color: "amarelo", p: "amarelo_p"
     },
     {
         preferences: "#Filmes",
-        color: "vermelho"
+        color: "vermelho", p: "vermelho_p"
     },
     {
         preferences: "#Artes",
-        color: "branco"
+        color: "branco", p: "branco_p"
     },
     {
         preferences: "#Fotografia",
-        color: "cinza"
+        color: "cinza", p: "cinza_p"
     },
     {
         preferences: "#Yoga",
-        color: "verde"
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Danças",
-        color: "vermelho"
+        color: "vermelho", p: "vermelho_p"
     },
     {
         preferences: "#Futebol",
-        color: "verde"
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Jardinagem",
-        color: "verde"
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Escalar",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Ciclismo",
-        color: "amarelo"
+        color: "amarelo", p: "amarelo_p"
     },
     {
         preferences: "#Literatura",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Matematica",
-        color: "violeta"
+        color: "violeta", p: "violeta_p"
     },
     {
         preferences: "#Artesanato",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Ciencias",
-        color: "verde"
+        color: "verde", p: "verde_p"
     },
     {
         preferences: "#Linguagens",
-        color: "vermelho"
+        color: "vermelho", p: "vermelho_p"
     },
     {
         preferences: "#Faculdade",
-        color: "indigo"
+        color: "indigo", p: "indigo_p"
     },
     {
         preferences: "#Instrumentos",
-        color: "indigo"
+        color: "indigo", p: "indigo_p"
     },
     {
         preferences: "#Músicas",
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
     {
         preferences: "#Política",
-        color: "vermelho"
+        color: "vermelho", p: "vermelho_p"
     },
     {
         preferences: "#Tiro ao Alvo",
-        color: "laranja"
+        color: "laranja", p: "laranja_p"
     },
     {
         preferences: "#Teatro",
-        color: "violeta"
+        color: "violeta", p: "violeta_p"
     },
 
     {
         preferences: "#Amizade",
-        color: "roxo"
+        color: "roxo", p: "roxo_p"
     },
 
     {
         preferences: "#Conversa",
-        color: "amarelo"
+        color: "amarelo", p: "amarelo_p"
     },
     {
         preferences: "#Parkour",
-        color: "preto"
+        color: "preto", p: "preto_p"
     },
     {
         preferences: "#Estudos",
-        color: "azul"
+        color: "azul", p: "azul_p"
     },
     {
         preferences: "#Campo airsoft",
-        color: "laranja"
+        color: "laranja", p: "laranja_p"
     },
 ]

@@ -5,49 +5,85 @@
 }
 
 .azul {
-    background-color: blue;
+    background-color: rgb(0, 0, 117);
+}
+.azul_p {
+    color: rgb(188, 188, 255);
 }
 
 .verde {
-    background-color: green;
+    background-color: rgb(0, 100, 0);
+}
+.verde_p {
+    color: rgb(162, 255, 162);
 }
 
 .vermelho {
-    background-color: red;
+    background-color: rgb(150, 0, 0);
+}
+.vermelho_p {
+    color: rgb(255, 191, 191);
 }
 
 .amarelo {
-    background-color: yellow;
+    background-color: rgb(135, 135, 0);
+}
+.amarelo_p {
+    color: rgb(255, 255, 194);
 }
 
 .roxo {
-    background-color: purple;
+    background-color: rgb(55, 0, 55);
+}
+.roxo_p {
+    color: rgb(255, 161, 255);
 }
 
 .violeta {
-    background-color: violet;
+    background-color: rgb(106, 0, 106);
+}
+.violeta_p {
+    color: rgb(255, 207, 255);
 }
 
 .laranja {
-    background-color: orange;
+    background-color: rgb(142, 92, 0);
+}
+.laranja_p {
+    color: rgb(255, 225, 169);
 }
 
 .indigo {
     background-color: indigo;
 }
+.indigo_p {
+    color: rgb(237, 211, 255);
+}
 
 .roza {
-    background-color: pink;
+    background-color: rgb(255, 109, 134);
+}
+.roza_p {
+    color: rgb(255, 212, 212);
 }
 
 .branco {
     background-color: white;
 }
+.branco_p {
+    color: rgb(87, 87, 87);
+}
 
 .cinza{
     background-color: gray;
 }
+.cinza_p{
+    color: rgb(255, 255, 255);
+}
 
 .preto {
     background-color: black;
+}
+.preto_p {
+    color: rgb(255, 255, 255);
 }

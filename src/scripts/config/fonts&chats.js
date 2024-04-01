@@ -16,7 +16,7 @@ export const holyChatsCreate = () => {
     liCardChatHoly.classList = `chat-holy ${holyChat.nameHoly} ${holyChat.colorHoly} ${holyChat.colorText}`
     
     const pTextCardHoly = document.createElement("p")
-    pTextCardHoly.innerText = "A felicidade não é algo pronto. Ela é feita das suas próprias ações."
+    pTextCardHoly.innerText = "Vc Esta Bem ?"
 
     liCardChatHoly.append(pTextCardHoly)
     ulHolyChats.append(liCardChatHoly)

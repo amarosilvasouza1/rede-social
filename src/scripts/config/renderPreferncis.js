@@ -14,8 +14,11 @@ export const createRenderPreferencesConfig = () => {
         
         const liPreferenceInfo = document.createElement("li")
         liPreferenceInfo.classList = `li_preference_info ${array.preferences} ${array.color}`
-        liPreferenceInfo.innerText = array.preferences
+        const pPreferenceInfo = document.createElement("p")
+        pPreferenceInfo.classList = `p_preference_info ${array.p}`
+        pPreferenceInfo.innerText = array.preferences
 
+        liPreferenceInfo.append(pPreferenceInfo)
         ulPreferenceInfo.append(liPreferenceInfo)
     }
  

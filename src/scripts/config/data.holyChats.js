@@ -12,6 +12,9 @@ export const holyChatArray = [
         nameHoly: "holy-chat_blue", colorHoly: "blue_chat", colorText: "blue_text"
     },
     { 
+        nameHoly: "holy-chat_blue-glod", colorHoly: "blue-gold_chat", colorText: "blue-gold_text"
+    },
+    { 
         nameHoly: "holy-chat_purple", colorHoly: "purple_chat", colorText: "purple_text"
     },
     { 

@@ -1,0 +1,12 @@
+.ul_preferences_info {
+    display: flex;
+    gap: 1rem;
+}
+
+.li_preference_info {
+    border-radius: 20px;
+}
+
+.p_preference_info {
+    padding: 5px 10px;
+}
