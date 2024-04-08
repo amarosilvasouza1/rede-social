@@ -25,3 +25,23 @@ export const createRenderPreferencesConfig = () => {
     divPreferencesInfo.append(ulPreferenceInfo)
     preferencesConteiner.append(divPreferencesInfo)
 }
+
+
+// export const inputPreferencesUser = () => {
+//     const preferencesConteiner = document.querySelector(".Info_user_config ")
+    
+//     const divInputPreferences = document.createElement("div")
+//     divInputPreferences.classList = "div_input_preferences"
+    
+//     const inputPreferences = document.createElement("input")
+//     inputPreferences.placeholder = " digite sua preferencias ..."
+//     inputPreferences.classList = "input_preferences"
+    
+//     preferencesConteiner.append(divInputPreferences)
+//     divInputPreferences.append(inputPreferences)
+    
+//     const clickInput = document.querySelector(".input_preferences")
+//     clickInput.addEventListener("click", () => {
+//         createRenderPreferencesConfig(clickInput)
+//     })
+// }

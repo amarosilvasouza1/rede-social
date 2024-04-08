@@ -264,14 +264,3 @@
         padding-left: 2px;
     }
 }
-
-@keyframes closeOpitionAnimation {
-
-    0% {
-        padding: 2px 10px; 
-    }
-
-    100% {
-        padding: 2px 19px;
-    }
-}

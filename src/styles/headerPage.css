@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 4.5rem;
+    height: 4.39rem;
     border-bottom: 1px solid white;
     color: white;
     background-color: #212529;
@@ -60,8 +60,8 @@
 }
 
 .card_select {
+    color: #1a3f63;
     padding: 0px 7px;
-
     font-size: 12px;
     font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -69,7 +69,6 @@
 
 .card_select:hover {
     color: rgb(42, 186, 107);
-
     border-bottom: 3px solid rgb(42, 186, 107);
 }
 

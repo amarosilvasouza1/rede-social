@@ -12,16 +12,23 @@ export const holyChatsCreate = () => {
    for (let i = 0; i < holyChatArray.length; i++) {
     const holyChat = holyChatArray[i]
 
+    const divClickHolyChat = document.createElement("div")
+    divClickHolyChat.classList = "div_click_holy-chat"
+
     const liCardChatHoly = document.createElement("li")
-    liCardChatHoly.classList = `chat-holy ${holyChat.nameHoly} ${holyChat.colorHoly} ${holyChat.colorText}`
+    liCardChatHoly.classList = `chat-holy ${holyChat.nameHoly} ${holyChat.colorHoly} ${holyChat.colorText} pointer`
     
     const pTextCardHoly = document.createElement("p")
     pTextCardHoly.innerText = "Vc Esta Bem ?"
 
     liCardChatHoly.append(pTextCardHoly)
-    ulHolyChats.append(liCardChatHoly)
+    ulHolyChats.append(liCardChatHoly, divClickHolyChat)
    }
 
     holyChatsConteiner.append(divHolyChats)
     divHolyChats.append(ulHolyChats)
+
+    const selectHolyChat = () => {
+
+    }
 }

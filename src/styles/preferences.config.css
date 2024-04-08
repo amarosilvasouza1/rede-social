@@ -10,3 +10,21 @@
 .p_preference_info {
     padding: 5px 10px;
 }
+
+.div_input_preferences {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.input_preferences {
+    width: 80%;
+    height: 22px;
+    background-color: rgb(180, 186, 194);
+    color: white;
+    padding-left: 10px;
+    border-radius: 7px;
+    outline: none;
+}

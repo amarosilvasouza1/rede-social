@@ -1,5 +1,4 @@
 import { entreSaveBio } from "./bioConfig.js"
-import { colorConfigArray } from "./data.color.config.js"
 import { holyChatsCreate } from "./fonts&chats.js"
 import { createRenderPreferencesConfig } from "./renderPreferncis.js"
 
@@ -116,7 +115,7 @@ const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPrefere
 
         const createImgInfoUser = document.createElement("img")
         createImgInfoUser.src = img
-        createImgInfoUser.classList = "imgPerfil perfil_info_user"
+        createImgInfoUser.classList = "imgPerfil perfil_info_user pointer"
 
         const createNameInfoUser = document.createElement("p")
         createNameInfoUser.innerText = NameUser
@@ -135,48 +134,21 @@ const renderSectionConfig = (ulListConfig, optionColor, optionBio, optionPrefere
     createRendInfouser()
 }
 
-const createRenderColorConfig = () => {
-    const colorConteiner = document.querySelector(".Info_user_config ")
+// const createRenderColorConfig = () => {
+//     const colorConteiner = document.querySelector(".Info_user_config ")
 
-    const divColorInfo = document.createElement("div")
-    divColorInfo.classList = "conteiner_color close_info"
+//     const divColorInfo = document.createElement("div")
+//     divColorInfo.classList = "conteiner_color close_info"
 
-    const pColorinfo = document.createElement("p")
-    pColorinfo.innerText = "Seu Nome"
+//     const pColorinfo = document.createElement("p")
+//     pColorinfo.innerText = "Seu Nome"
 
-    const p1Colorinfo = document.createElement("p")
-    pColorinfo.innerText = "connfiguraçao"
+    
+//     divColorInfo.append(pColorinfo, ulColorInfo, p1Colorinfo, ul1ColorInfo)
+//     colorConteiner.append(divColorInfo)
 
-    const ulColorInfo = document.createElement("ul")
-    ulColorInfo.classList = "conteiner_card_color"
-
-    const ul1ColorInfo = document.createElement("ul")
-    ul1ColorInfo.classList = "conteiner_card_color"
-
-
-    for (let i = 0; i < colorConfigArray.length; i++) {
-        const color = colorConfigArray[i];
-
-        const liColorInfo = document.createElement("li")
-        liColorInfo.classList = `card_color_info ${color.color} pointer`
-
-        ulColorInfo.append(liColorInfo)
-    }
-
-    for (let i = 0; i < colorConfigArray.length; i++) {
-        const color = colorConfigArray[i];
-
-        const li1ColorInfo = document.createElement("li")
-        li1ColorInfo.classList = `card_color_info ${color.color} pointer`
-
-        ul1ColorInfo.append(li1ColorInfo)
-    }
-
-    divColorInfo.append(pColorinfo, ulColorInfo, p1Colorinfo, ul1ColorInfo)
-    colorConteiner.append(divColorInfo)
-
-    create = true
-}
+//     create = true
+// }
 
 const createRenderBioConfig = () => {
     const bioConteiner = document.querySelector(".Info_user_config ")
@@ -353,11 +325,13 @@ const analysisClickOpitionCard = () => {
     const PreferencesClickOpition = document.querySelector(".optionPreferences")
     PreferencesClickOpition.addEventListener("click", () => {
         if (create == false) {
+            // inputPreferencesUser()
             createRenderPreferencesConfig()
         } else if (create == true) {
             const closeDivRemov = document.querySelector(".Info_user_config")
             const closeRemove = document.querySelector(".close_info")
             closeDivRemov.removeChild(closeRemove)
+            // inputPreferencesUser()
             createRenderPreferencesConfig()
         }
     })
@@ -398,17 +372,17 @@ const analysisClickOpitionCard = () => {
         }
     })
 
-    const colorClickOption = document.querySelector(".optionColor")
-    colorClickOption.addEventListener("click", () => {
-        if (create == false) {
-            createRenderColorConfig()
-        } else if (create == true) {
-            const closeDivRemove = document.querySelector(".Info_user_config")
-            const closeRemove = document.querySelector(".close_info")
-            closeDivRemove.removeChild(closeRemove)
-            createRenderColorConfig()
-        }
-    })
+    // const colorClickOption = document.querySelector(".optionColor")
+    // colorClickOption.addEventListener("click", () => {
+    //     if (create == false) {
+    //         createRenderColorConfig()
+    //     } else if (create == true) {
+    //         const closeDivRemove = document.querySelector(".Info_user_config")
+    //         const closeRemove = document.querySelector(".close_info")
+    //         closeDivRemove.removeChild(closeRemove)
+    //         createRenderColorConfig()
+    //     }
+    // })
 
     const fontsChatsClickOption = document.querySelector(".optionFonts")
     fontsChatsClickOption.addEventListener("click", () => {
