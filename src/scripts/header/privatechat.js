@@ -1,23 +1,59 @@
-const privateButton = document.querySelector("card_select_private")
-privateButton.addEventListener("click", () => {
-    privateChat()
-})
+export const privateButton = (liCardSelectPrivate) => {
+    liCardSelectPrivate.addEventListener("click", () => {
+        privateChat()
+    })
+}
 
 const privateChat = () => {
 
     const headerSelectConteiner = document.querySelector('.conteiner_main')
 
-    const privateDiv = document.createElement("div")
-    privateDiv.classList = "private_div"
+    const sectionPrivateChat = document.createElement("section")
+    sectionPrivateChat.classList = "private-chat_section"
 
-    const privateUl = document.createElement("ul")
-    privateUl.classList = "private_ul"
+    headerSelectConteiner.append(sectionPrivateChat)
 
-    const privateChatsLi = document.createElement("li")
-    privateLi.classList = "private-chats_li"
-    privateLi.innerText = "Conversas"
+    const sectionFriendsPrivateChat = document.createElement("section")
+    sectionFriendsPrivateChat.classList = "private-chat-friends_section"
 
-    const privateStatusLi = document.createElement("li")
-    privateStatusLi.classList = "private-status_li"
-    privateStatusLi.innerText = "Status"
+    const divFriendsPrivateChat = document.createElement("div")
+    divFriendsPrivateChat.classList = "private-chat_div"
+
+    const ulFriendsPrivateChat = document.createElement("ul")
+    ulFriendsPrivateChat.classList = "private-chat_ul"
+
+    const liFriendsPrivateChat = document.createElement("li")
+    liFriendsPrivateChat.classList = "private-chat_li"
+    
+    const sectionFriendsConversation = document.createElement("section")
+    sectionFriendsConversation.classList = "chat-friend-conversation_section"
+
+    const divFriendsConversation = document.createElement("div")
+    divFriendsConversation.classList = "chat-friend-conversation_div"
+
+    const ulFriendsConversation = document.createElement("ul")
+    ulFriendsConversation.classList = "chat-friend-conversation_ul"
+
+    const liFriendsConversation = document.createElement("li")
+    liFriendsConversation.classList = "chat-friend-conversation_"
+
+    renderPrivateChatFriends( sectionPrivateChat, divFriendsPrivateChat, ulFriendsPrivateChat, liFriendsPrivateChat)
+    
+    renderFriendsConversation(sectionPrivateChat, sectionFriendsConversation, divFriendsConversation, ulFriendsConversation, liFriendsConversation)
+
+    console.log(sectionPrivateChat)
+}
+
+const renderPrivateChatFriends = (sectionPrivateChat, sectionFriendsPrivateChat, divFriendsPrivateChat, ulFriendsPrivateChat, liFriendsPrivateChat) => {
+    sectionPrivateChat.append(sectionFriendsPrivateChat)
+    sectionFriendsPrivateChat.append(divFriendsPrivateChat)
+    divFriendsPrivateChat.append(ulFriendsPrivateChat)
+    ulFriendsPrivateChat.append(liFriendsPrivateChat)
+}
+
+const renderFriendsConversation = (sectionPrivateChat, sectionFriendsConversation, divFriendsConversation, ulFriendsConversation, liFriendsConversation) => {
+    sectionPrivateChat.append(sectionFriendsConversation)
+    sectionFriendsConversation.append(divFriendsConversation)
+    divFriendsConversation.append(ulFriendsConversation)
+    ulFriendsConversation.append(liFriendsConversation)
 }
