@@ -94,3 +94,8 @@
 .section_conteiner_select {
     width: 100%;
 }
+
+.green_on {
+    color: rgb(42, 186, 107);
+    border-bottom: 3px solid rgb(42, 186, 107);
+}

@@ -90,7 +90,6 @@ const renderButtonClickArrow = () => {
 
             privateButton(liCardSelectPrivate)
 
-
             const closeArrowClick = document.querySelector(".close")
             closeArrowClick.addEventListener("click", () => {
                 const arrowButtonConteiner = document.querySelector('.header_cfg')
